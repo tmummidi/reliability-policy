@@ -1,0 +1,11 @@
+{
+  "n": 50000,
+  "shape": 1.8,
+  "scale": 120.0,
+  "censor_time": 100.0,
+  "evaluation_cycles": 10000,
+  "baseline_age": 100.0,
+  "preventive_cost": 100.0,
+  "failure_cost": 600.0,
+  "seed": 20260929
+}

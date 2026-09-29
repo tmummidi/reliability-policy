@@ -1,0 +1,99 @@
+* Creating isolated environment: venv+pip...
+* Installing packages in isolated environment:
+  - setuptools==75.8.2
+  - wheel==0.45.1
+* Getting build dependencies for wheel...
+running egg_info
+creating src/tarun_reliability.egg-info
+writing src/tarun_reliability.egg-info/PKG-INFO
+writing dependency_links to src/tarun_reliability.egg-info/dependency_links.txt
+writing entry points to src/tarun_reliability.egg-info/entry_points.txt
+writing requirements to src/tarun_reliability.egg-info/requires.txt
+writing top-level names to src/tarun_reliability.egg-info/top_level.txt
+writing manifest file 'src/tarun_reliability.egg-info/SOURCES.txt'
+reading manifest file 'src/tarun_reliability.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'src/tarun_reliability.egg-info/SOURCES.txt'
+* Building wheel...
+running bdist_wheel
+running build
+running build_py
+creating build/lib/reliability
+copying src/reliability/__main__.py -> build/lib/reliability
+copying src/reliability/survival.py -> build/lib/reliability
+copying src/reliability/policy.py -> build/lib/reliability
+copying src/reliability/evidence.py -> build/lib/reliability
+copying src/reliability/__init__.py -> build/lib/reliability
+copying src/reliability/cli.py -> build/lib/reliability
+running egg_info
+writing src/tarun_reliability.egg-info/PKG-INFO
+writing dependency_links to src/tarun_reliability.egg-info/dependency_links.txt
+writing entry points to src/tarun_reliability.egg-info/entry_points.txt
+writing requirements to src/tarun_reliability.egg-info/requires.txt
+writing top-level names to src/tarun_reliability.egg-info/top_level.txt
+reading manifest file 'src/tarun_reliability.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'src/tarun_reliability.egg-info/SOURCES.txt'
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64/wheel
+creating build/bdist.linux-x86_64/wheel/reliability
+copying build/lib/reliability/__main__.py -> build/bdist.linux-x86_64/wheel/./reliability
+copying build/lib/reliability/survival.py -> build/bdist.linux-x86_64/wheel/./reliability
+copying build/lib/reliability/policy.py -> build/bdist.linux-x86_64/wheel/./reliability
+copying build/lib/reliability/evidence.py -> build/bdist.linux-x86_64/wheel/./reliability
+copying build/lib/reliability/__init__.py -> build/bdist.linux-x86_64/wheel/./reliability
+copying build/lib/reliability/cli.py -> build/bdist.linux-x86_64/wheel/./reliability
+running install_egg_info
+Copying src/tarun_reliability.egg-info to build/bdist.linux-x86_64/wheel/./tarun_reliability-0.1.0-py3.12.egg-info
+running install_scripts
+creating build/bdist.linux-x86_64/wheel/tarun_reliability-0.1.0.dist-info/WHEEL
+creating '/workspace/scratch/e8d59f94b615/projects/reliability-policy/dist/.tmp-t_9kjn2y/tarun_reliability-0.1.0-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'reliability/__init__.py'
+adding 'reliability/__main__.py'
+adding 'reliability/cli.py'
+adding 'reliability/evidence.py'
+adding 'reliability/policy.py'
+adding 'reliability/survival.py'
+adding 'tarun_reliability-0.1.0.dist-info/LICENSE'
+adding 'tarun_reliability-0.1.0.dist-info/METADATA'
+adding 'tarun_reliability-0.1.0.dist-info/WHEEL'
+adding 'tarun_reliability-0.1.0.dist-info/entry_points.txt'
+adding 'tarun_reliability-0.1.0.dist-info/top_level.txt'
+adding 'tarun_reliability-0.1.0.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+Successfully built tarun_reliability-0.1.0-py3-none-any.whl
+
+
+Processing ./projects/reliability-policy/dist/tarun_reliability-0.1.0-py3-none-any.whl
+Collecting numpy==1.26.4 (from tarun-reliability==0.1.0)
+  Using cached numpy-1.26.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+Collecting scipy==1.13.1 (from tarun-reliability==0.1.0)
+  Using cached scipy-1.13.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (60 kB)
+Using cached numpy-1.26.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.0 MB)
+Using cached scipy-1.13.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (38.2 MB)
+Installing collected packages: numpy, scipy, tarun-reliability
+Successfully installed numpy-1.26.4 scipy-1.13.1 tarun-reliability-0.1.0
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.1
+[notice] To update, run: python -m pip install --upgrade pip
+
+test_decreasing_hazard_prefers_run_to_failure (test_science.PolicyTests.test_decreasing_hazard_prefers_run_to_failure) ... ok
+test_equal_policies_have_zero_paired_difference (test_science.PolicyTests.test_equal_policies_have_zero_paired_difference) ... ok
+test_renewal_ratio_is_total_cost_over_total_time (test_science.PolicyTests.test_renewal_ratio_is_total_cost_over_total_time) ... ok
+test_censoring_contributes_exposure_without_failure (test_science.SurvivalTests.test_censoring_contributes_exposure_without_failure) ... ok
+test_exponential_likelihood_closed_form (test_science.SurvivalTests.test_exponential_likelihood_closed_form) ... ok
+test_km_tied_failures_and_censoring (test_science.SurvivalTests.test_km_tied_failures_and_censoring) ... ok
+test_mle_recovers_synthetic_parameters (test_science.SurvivalTests.test_mle_recovers_synthetic_parameters) ... ok
+test_no_failures_is_not_an_identified_mle (test_science.SurvivalTests.test_no_failures_is_not_an_identified_mle) ... ok
+test_predictive_survival_boundary_and_interval (test_science.SurvivalTests.test_predictive_survival_boundary_and_interval) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.011s
+
+OK
+
+{"output": "/workspace/scratch/e8d59f94b615/projects/reliability-policy/results/installed-demo.json", "runtime_seconds": 0.0403}
+
+No broken requirements found.
